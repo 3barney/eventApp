@@ -4,15 +4,17 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.WindowManager
 
+// TODO: Check on auth items if needed, we do social login
 class MainActivity : AppCompatActivity() {
 
     private var mDelayHandler: Handler? = null
-    private val SPLASHDELAY: Long = 3000;
+    private val SPLASH_DELAY: Long = 5000
 
     private val mRunnable: Runnable = Runnable {
-        if (isFinishing) {
-            val intent = Intent(applicationContext, HomeActivity::class.java)
+        if (!isFinishing) {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -23,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         mDelayHandler = Handler(); // initialize handler
-        mDelayHandler!!.postDelayed(mRunnable, SPLASHDELAY)
+        mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
     }
 
     public override fun onDestroy() {

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">event254</string>
+    <string name="background_image_description">events image</string>
+    <string name="welcome_text">Welcome To events254</string>
+    <string name="app_description">Your source of all events in Nairobi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
