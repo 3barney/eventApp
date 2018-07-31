@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/event_name" />
+
+    <item
+        android:id="@+id/navigation_calendar"
+        android:icon="@drawable/ic_event_white_24dp"
+        android:title="@string/calendar"/>
+
+    <item
+        android:id="@+id/navigation_saved"
+        android:icon="@drawable/ic_save_white_24dp"
+        android:title="@string/saved_events"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_white_24dp"
+        android:title="@string/notifications" />
+</menu>
